@@ -108,7 +108,7 @@ const Body = () => {
   // Load CSV File
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('./public/Electric_Vehicle_Population_Data.csv');
+      const response = await fetch('./Electric_Vehicle_Population_Data.csv');
       const csvText = await response.text();
 
       Papa.parse(csvText, {
